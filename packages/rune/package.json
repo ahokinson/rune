@@ -28,7 +28,7 @@
   "module": "./dist/index.js",
   "types": "./dist/index.d.ts",
   "bin": {
-    "rune": "./dist/cli.js"
+    "rune": "dist/cli.js"
   },
   "files": [
     "dist",
