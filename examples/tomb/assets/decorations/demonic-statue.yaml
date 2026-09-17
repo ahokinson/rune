@@ -1,0 +1,53 @@
+type: decoration
+name: demonic-statue
+scale: 1.1
+bobAmplitude: 0
+bobFrequency: 0
+wallMounted: false
+mountHeight: 0
+solid: true
+radius: 0.5
+light:
+  color: [255, 60, 30]
+  radius: 5
+  intensity: 1.2
+
+legends:
+  idol:
+    K: [22, 12, 14]
+    D: [55, 25, 25]
+    M: [90, 45, 40]
+    S: [130, 70, 55]
+    s: [165, 95, 75]
+    E: [255, 70, 35]
+    F: [255, 130, 60]
+    Y: [255, 220, 100]
+
+clips:
+  idle:
+    legend: idol
+    frameDuration: 1000
+    loop: true
+    frames:
+      - |
+        .K..   ..K.
+        .KK   .KKK.
+        .SKK KKKS.
+         SDKKKKDS
+         SDMMMMDS
+         SDEDDEDS
+         SDEEEDDS
+         SDFFFFDS
+         SDMMMMDS
+         SDDDDDDS
+        SDMssssMDS
+        SDsSSSSsSDS
+        SDsSSDSSsSDS
+        SDsSDDDSsSDS
+        SDsSDYDSsSDS
+        SDsSSSSSsSDS
+        SDDSSSSSSSSDS
+        SDDSSSSSSSSDS
+        SDDDMMMMMMMDDS
+        SDDDDDDDDDDDDDS
+        KKKKKKKKKKKKKK

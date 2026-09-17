@@ -1,0 +1,41 @@
+type: weapon
+name: pistol
+
+cooldownMs: 250
+recoilDurationMs: 180
+recoilKickRows: 2
+bobPeriodMs: 120
+bobAmplitude: 1
+
+legends:
+  idle:
+    "▓": { char: "▓", fg: [150, 150, 160] }
+    "▒": { char: "▒", fg: [90, 90, 100] }
+    "█": { char: "█", fg: [50, 45, 40] }
+  fire_a:
+    "▓": { char: "▓", fg: [150, 150, 160] }
+    "▒": { char: "▒", fg: [90, 90, 100] }
+    "█": { char: "█", fg: [50, 45, 40] }
+    "░": { char: "░", fg: [255, 220, 80] }
+    "●": { char: "●", fg: [255, 255, 200] }
+  fire_b:
+    "▓": { char: "▓", fg: [150, 150, 160] }
+    "▒": { char: "▒", fg: [90, 90, 100] }
+    "█": { char: "█", fg: [50, 45, 40] }
+    "░": { char: "░", fg: [255, 180, 60] }
+
+clips:
+  idle:
+    legend: idle
+    frameDuration: 1000
+    loop: true
+    frames:
+      - "     ▓▓▓▓▓\n     ▒▒▒▒▒\n     ▒▒▒▒▒\n     ▒▒▓▒▒\n▓▓▓▓▒▒▒▒▓\n▓▓▓▓▓▓▓▓▓\n     ████\n      ██\n      ██"
+  fire:
+    frameDuration: 70
+    loop: false
+    frames:
+      - legend: fire_a
+        art: "     ●●●●●\n     ░░░░░\n     ░░░░░\n     ░░▓░░\n▓▓▓▓░░░░▓\n▓▓▓▓▓▓▓▓▓\n     ████\n      ██\n      ██"
+      - legend: fire_b
+        art: "     ▓▓▓▓▓\n     ▒▒░▒▒\n     ▒▒▒▒▒\n     ▒▒▓▒▒\n▓▓▓▓▒▒▒▒▓\n▓▓▓▓▓▓▓▓▓\n     ████\n      ██\n      ██"

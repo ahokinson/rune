@@ -1,0 +1,13 @@
+type: theme
+name: catacombs
+stone: [125, 120, 115]
+stoneMortar: [28, 25, 25]
+metal: [110, 95, 85]
+metalSeam: [45, 38, 32]
+metalRivet: [165, 150, 135]
+floor: [72, 65, 58]
+floorMortar: [22, 18, 16]
+ceiling: [18, 16, 18]
+glow: [255, 195, 110]
+hazard: [230, 90, 60]
+fogDistance: 13

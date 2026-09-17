@@ -1,0 +1,69 @@
+type: decoration
+name: wall-sconce
+scale: 0.38
+bobAmplitude: 0
+bobFrequency: 0
+wallMounted: true
+mountHeight: 1.1
+solid: false
+radius: 0
+light:
+  color: [255, 175, 90]
+  radius: 4
+  intensity: 1.0
+
+legends:
+  flame:
+    Y: [255, 240, 130]
+    O: [255, 180, 65]
+    R: [235, 100, 40]
+    D: [130, 45, 22]
+    K: [55, 35, 22]
+    M: [120, 90, 55]
+    B: [85, 60, 35]
+
+clips:
+  idle:
+    legend: flame
+    frameDuration: 180
+    loop: true
+    frames:
+      - |
+        ..Y..
+        .YOY.
+        YORYO
+        ROORR
+        .ROR.
+        ..R..
+        .....
+        KBBBK
+        BMMMB
+        BMMMB
+        BBBBB
+        .BBB.
+      - |
+        .Y...
+        YOY..
+        OORYO
+        RORRO
+        .RDR.
+        ..R..
+        .....
+        KBBBK
+        BMMMB
+        BMMMB
+        BBBBB
+        .BBB.
+      - |
+        ..Y..
+        .YOYY
+        YORYO
+        ROORR
+        .DRR.
+        ..D..
+        .....
+        KBBBK
+        BMMMB
+        BMMMB
+        BBBBB
+        .BBB.

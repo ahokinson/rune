@@ -1,0 +1,10 @@
+node_modules
+dist
+*.log
+*.tsbuildinfo
+.DS_Store
+.idea/
+.bun-cache/
+.bun-tmp/
+.rune/
+*.bun-build

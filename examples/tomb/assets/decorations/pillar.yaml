@@ -1,0 +1,42 @@
+type: decoration
+name: pillar
+scale: 0.95
+bobAmplitude: 0
+bobFrequency: 0
+
+legends:
+  stone:
+    S: [195, 180, 155]
+    s: [165, 150, 125]
+    M: [120, 105, 85]
+    D: [80, 65, 50]
+    K: [45, 35, 25]
+    H: [220, 205, 180]
+
+clips:
+  idle:
+    legend: stone
+    frameDuration: 1000
+    loop: false
+    frames:
+      - |
+        .HSSSSSH.
+        HSSsSsSSH
+        DSsSsSsSD
+        DSSsSsSSD
+        DSsSsSsSD
+        .DsSsSsD.
+        ..MSSSM..
+        ..MSSSM..
+        ..MSSSM..
+        ..MSsSM..
+        ..MSSSM..
+        ..MSsSM..
+        ..MSSSM..
+        ..MSSSM..
+        ..MSsSM..
+        ..MSSSM..
+        ..DsSsD..
+        .DSSSSSD.
+        DSSsSsSSD
+        KDDDDDDDK

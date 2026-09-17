@@ -1,0 +1,37 @@
+type: level
+name: Decorations Test
+theme: gateway
+legend:
+  "#":
+    solid: true
+    textureId: 1
+  ".":
+    solid: false
+    textureId: 0
+markers:
+  S: player
+  E: exit
+  T: { decoration: "torch" }
+  P: { decoration: "pillar" }
+  B: { decoration: "barrel" }
+  M: { decoration: "terminal" }
+  N: { decoration: "banner" }
+  C: { decoration: "corpse" }
+  D: { decoration: "debris" }
+lights:
+  - at: [3, 4]
+    color: [255, 175, 80]
+    radius: 4
+    intensity: 1.0
+  - at: [15, 4]
+    color: [120, 220, 230]
+    radius: 4
+    intensity: 1.0
+layout: |
+  ######################
+  #S...................#
+  #....................#
+  #..T..P..B..M..N..C.D#
+  #....................#
+  #...................E#
+  ######################

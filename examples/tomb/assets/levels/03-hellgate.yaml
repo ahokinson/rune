@@ -1,0 +1,144 @@
+type: level
+name: Hellgate
+theme: hellgate
+extraThemes: [catacombs]
+# Climax arena: dim catacombs antechamber (hanging bodies, sconces) -> door ->
+# hellgate ritual hall with a self-lit demonic-statue centerpiece on a raised
+# platform, a hazard "pentagram" ring, broken-pillar cover, imp packs + hellknights.
+legend:
+  "#":
+    solid: true
+    textureId: 1
+  ".":
+    solid: false
+    textureId: 0
+  "b":
+    solid: false
+    textureId: 0
+    floorDecal: 1
+  "a":
+    solid: false
+    textureId: 0
+    floorDecal: 3
+  "h":
+    solid: false
+    textureId: 0
+    hazard: 10
+    floorDecal: 2
+  "p":
+    solid: false
+    textureId: 0
+    floorHeight: 0.40
+    ceilingHeight: 2.30
+  "m":
+    solid: false
+    textureId: 0
+    floorHeight: 0.20
+    ceilingHeight: 2.10
+  "c":
+    solid: false
+    textureId: 0
+    themeId: 1
+  "k":
+    solid: true
+    textureId: 1
+    themeId: 1
+  "D":
+    solid: true
+    textureId: 2
+    door:
+      openTextureId: 0
+  "E":
+    solid: false
+    textureId: 9
+markers:
+  P: player
+  I: imp
+  K: hellknight
+  H:
+    pickup: health
+    amount: 25
+  A:
+    pickup: ammo
+    amount: 10
+  E: exit
+  Y:
+    decoration: demonic-statue
+  L:
+    decoration: pillar
+  U:
+    decoration: skull-pile
+  O:
+    decoration: blood-pool
+  G:
+    decoration: hanging-body
+  S:
+    decoration: wall-sconce
+  T:
+    decoration: torch
+lights:
+  - at: [4, 13]
+    color: [255, 165, 95]
+    radius: 5
+    intensity: 0.6
+  - at: [20, 13]
+    color: [255, 80, 40]
+    radius: 6
+    intensity: 1.4
+  - at: [20, 11]
+    color: [255, 120, 60]
+    radius: 4
+    intensity: 1.2
+  - at: [20, 15]
+    color: [255, 120, 60]
+    radius: 4
+    intensity: 1.2
+  - at: [10, 5]
+    color: [255, 110, 50]
+    radius: 5
+    intensity: 1.0
+  - at: [10, 21]
+    color: [255, 110, 50]
+    radius: 5
+    intensity: 1.0
+  - at: [30, 8]
+    color: [255, 110, 50]
+    radius: 5
+    intensity: 1.0
+  - at: [30, 18]
+    color: [255, 110, 50]
+    radius: 5
+    intensity: 1.0
+  - at: [20, 2]
+    color: [255, 110, 50]
+    radius: 5
+    intensity: 1.0
+layout: |
+  ################################
+  ##########.....................#
+  ##########..........T..........#
+  ##########..A..................#
+  ##########.....................#
+  kkkkkkkkkkT...I...........I....#
+  kcccccccck......I...L...I......#
+  kcccccccck.....................#
+  kcGccUccck.....L....b....L....T#
+  kccccccGck...K.U....hO...U.K...#
+  kSccccccck.......h.....h.......#
+  kcccccccck........O.m..........#
+  kcGcccccck.........ppp.........#
+  kccPcccccDT...L.h.apYpa.h.L...E#
+  kcccccccck.........ppp.........#
+  kccccccGck..........m.O........#
+  kcGcccccck.......h.....h.......#
+  kcccccccck.....U...Oh....U.....#
+  kSccUcccck.....L....b....L....T#
+  kccAccccck.....................#
+  kcccccccck..........L..........#
+  kkkkkkkkkkT....................#
+  ##########....I...........I....#
+  ##########..........K..........#
+  ##########.....................#
+  ##########..........H..........#
+  ##########.....................#
+  ################################

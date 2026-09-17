@@ -1,0 +1,13 @@
+type: theme
+name: laboratories
+stone: [130, 155, 140]
+stoneMortar: [45, 60, 50]
+metal: [110, 160, 170]
+metalSeam: [40, 55, 65]
+metalRivet: [160, 210, 215]
+floor: [60, 85, 70]
+floorMortar: [25, 35, 28]
+ceiling: [35, 50, 55]
+glow: [120, 220, 230]
+hazard: [230, 215, 70]
+fogDistance: 20

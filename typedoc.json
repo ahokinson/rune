@@ -1,0 +1,18 @@
+{
+  "entryPoints": ["packages/rune/src/index.ts"],
+  "tsconfig": "./tsconfig.json",
+  "plugin": ["typedoc-plugin-markdown"],
+  "out": "docs/api",
+  "name": "rune",
+  "readme": "none",
+  "includeVersion": false,
+  "disableSources": false,
+  "excludePrivate": true,
+  "excludeInternal": true,
+  "excludeProtected": false,
+  "excludeExternals": true,
+  "useCodeBlocks": true,
+  "flattenOutputFiles": true,
+  "entryModule": "rune",
+  "indexFormat": "table"
+}

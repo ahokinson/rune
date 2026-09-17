@@ -1,0 +1,40 @@
+type: decoration
+name: corpse
+scale: 0.4
+bobAmplitude: 0
+bobFrequency: 0
+
+legends:
+  body:
+    S: [220, 200, 175]
+    s: [170, 150, 125]
+    K: [40, 30, 20]
+    D: [80, 55, 35]
+    R: [130, 25, 25]
+    r: [80, 15, 18]
+    M: [90, 80, 70]
+
+clips:
+  idle:
+    legend: body
+    frameDuration: 1000
+    loop: false
+    frames:
+      - |
+        ................
+        ................
+        ................
+        ................
+        ................
+        ................
+        ................
+        ................
+        .....KKKK.......
+        ....KSsSsK......
+        ....DDsDDD.r....
+        ..KKKDDDDKKKrr..
+        .KSsSDDDDDsSsKr.
+        KSsSsRDDRSsSsSKr
+        rrrrRRrrRRrrrrrr
+        .rrrRrrrrRrrrr..
+        ..rrRRRRRRrrr...

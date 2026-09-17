@@ -1,0 +1,13 @@
+type: theme
+name: gateway
+stone: [205, 170, 115]
+stoneMortar: [80, 70, 55]
+metal: [150, 170, 200]
+metalSeam: [60, 70, 85]
+metalRivet: [200, 210, 220]
+floor: [105, 82, 52]
+floorMortar: [38, 30, 22]
+ceiling: [42, 44, 62]
+glow: [255, 175, 80]
+hazard: [230, 200, 60]
+fogDistance: 18

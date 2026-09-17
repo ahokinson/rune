@@ -1,0 +1,13 @@
+type: theme
+name: foundry
+stone: [165, 105, 75]
+stoneMortar: [32, 22, 18]
+metal: [195, 110, 60]
+metalSeam: [65, 40, 28]
+metalRivet: [255, 195, 105]
+floor: [80, 55, 40]
+floorMortar: [25, 18, 15]
+ceiling: [42, 30, 28]
+glow: [255, 130, 30]
+hazard: [255, 110, 30]
+fogDistance: 15

@@ -1,0 +1,46 @@
+type: level
+name: Textures Test
+theme: gateway
+legend:
+  "#":
+    solid: true
+    textureId: 1
+  "@":
+    solid: true
+    textureId: 2
+  "3":
+    solid: true
+    textureId: 3
+  "4":
+    solid: true
+    textureId: 4
+  "5":
+    solid: true
+    textureId: 5
+  "6":
+    solid: true
+    textureId: 6
+  "7":
+    solid: true
+    textureId: 7
+  "8":
+    solid: true
+    textureId: 8
+  "T":
+    solid: true
+    textureId: 10
+  ".":
+    solid: false
+    textureId: 0
+markers:
+  P: player
+  E: exit
+layout: |
+  ####################
+  #P................E#
+  #..................#
+  #....TT....TT......#
+  #....TT....TT......#
+  #..................#
+  ##@@33445566778833##
+  ####################

@@ -1,0 +1,42 @@
+type: level
+name: Heights Test
+theme: gateway
+legend:
+  "#":
+    solid: true
+    textureId: 1
+  ".":
+    solid: false
+    textureId: 0
+  "1":
+    solid: false
+    textureId: 0
+    floorHeight: 0.10
+  "2":
+    solid: false
+    textureId: 0
+    floorHeight: 0.25
+  "3":
+    solid: false
+    textureId: 0
+    floorHeight: 0.40
+  "p":
+    solid: false
+    textureId: 0
+    floorHeight: 0.25
+  "o":
+    solid: false
+    textureId: 0
+    ceilingHeight: 0.50
+markers:
+  P: player
+  E: exit
+layout: |
+  ############
+  #P..12pp..#
+  #.........#
+  #..ooo....#
+  #.....3...#
+  #.........#
+  #........E#
+  ############

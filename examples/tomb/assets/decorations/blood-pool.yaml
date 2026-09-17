@@ -1,0 +1,33 @@
+type: decoration
+name: blood-pool
+scale: 0.6
+bobAmplitude: 0
+bobFrequency: 0
+wallMounted: false
+mountHeight: 0.02
+solid: false
+radius: 0
+
+legends:
+  pool:
+    K: [25, 8, 8]
+    D: [80, 14, 14]
+    R: [140, 25, 22]
+    r: [185, 35, 28]
+    B: [70, 12, 12]
+
+clips:
+  idle:
+    legend: pool
+    frameDuration: 1500
+    loop: true
+    frames:
+      - |
+        ..KDDDDK..
+        .KDRRRRDK.
+        KDRrrrrRDK
+        DRrrRrrrRD
+        DRrRrrrrRD
+        KDRrrrrRDK
+        .KDRRRRDK.
+        ..KDDDDK..

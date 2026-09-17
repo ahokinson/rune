@@ -1,0 +1,41 @@
+type: decoration
+name: pipes
+scale: 0.7
+bobAmplitude: 0
+bobFrequency: 0
+wallMounted: true
+mountHeight: 0.85
+solid: false
+radius: 0
+
+legends:
+  metal:
+    D: [50, 55, 65]
+    M: [95, 105, 120]
+    S: [160, 170, 185]
+    K: [25, 28, 35]
+    H: [200, 210, 220]
+    R: [120, 65, 45]
+    r: [60, 30, 20]
+
+clips:
+  idle:
+    legend: metal
+    frameDuration: 1000
+    loop: true
+    frames:
+      - |
+        KMMK  KMMK
+        KSHK  KSHK
+        KMSK  KMSK
+        KSHK  KSHK
+        KMSK  KMSK
+        KMMKKKKMMK
+        KSSSDDDSSK
+        KMRRRrrRMK
+        KSHK  KMSK
+        KMSK  KMSK
+        KSHK  KSHK
+        KMSK  KMSK
+        KSSK  KSHK
+        KKKK  KKKK

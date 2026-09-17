@@ -1,0 +1,63 @@
+type: exit
+name: exit
+
+legends:
+  exit:
+    H: [200, 255, 180]
+    G: [60, 220, 140]
+    g: [30, 150, 95]
+    C: [180, 255, 230]
+    W: [255, 255, 245]
+    L: [170, 180, 190]
+    M: [115, 125, 135]
+    N: [65, 70, 78]
+    K: [30, 32, 36]
+
+clips:
+  pulse:
+    legend: exit
+    frameDuration: 450
+    loop: true
+    frames:
+      - |
+        ...HH...
+        ..HGGH..
+        .HGGGGH.
+        HGGGGGGH
+        GGGGGGGG
+        .GggggG.
+        .GCCCCG.
+        .GCCCCG.
+        .GCWWCG.
+        .GCWWCG.
+        .GCWWCG.
+        .GCWWCG.
+        .GCCCCG.
+        .GCCCCG.
+        .GggggG.
+        ..LMML..
+        .LMMMML.
+        LMMMMMML
+        NMMMMMMN
+        .KKKKKK.
+      - |
+        ...HH...
+        ..HGGH..
+        .HGGGGH.
+        HGGGGGGH
+        GGGGGGGG
+        .GggggG.
+        .GCWWCG.
+        .CWWWWC.
+        .WWWWWWW
+        WWWWWWWW
+        WWWWWWWW
+        .WWWWWWW
+        .CWWWWC.
+        .GCWWCG.
+        .GggggG.
+        ..LMML..
+        .LMMMML.
+        LMMMMMML
+        NMMMMMMN
+        .KKKKKK.

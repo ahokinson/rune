@@ -1,0 +1,205 @@
+type: enemy
+name: hellknight
+
+sightRange: 14
+attackRange: 8
+moveSpeed: 0.85
+repathIntervalMs: 500
+collisionSize: [0.6, 0.6]
+states: [idle, walk, attack, die]
+attackType: ranged
+attackDamage: 12
+attackWindupMs: 700
+attackCooldownMs: 1400
+
+legends:
+  body:
+    P: [220, 130, 110]
+    p: [165, 90, 80]
+    M: [115, 55, 50]
+    D: [75, 30, 35]
+    K: [35, 20, 25]
+    W: [235, 220, 180]
+    E: [255, 60, 50]
+    O: [80, 12, 8]
+    S: [245, 230, 195]
+    s: [180, 160, 130]
+  charge:
+    extends: body
+    G: [90, 230, 90]
+    g: [50, 160, 60]
+    Y: [220, 255, 180]
+  hurl:
+    extends: body
+    G: [120, 255, 110]
+    g: [60, 180, 70]
+    Y: [240, 255, 200]
+  die:
+    P: [165, 60, 60]
+    p: [115, 35, 40]
+    D: [70, 20, 25]
+    K: [40, 20, 22]
+    O: [70, 12, 10]
+    M: [105, 30, 35]
+
+clips:
+  idle:
+    legend: body
+    frameDuration: 450
+    loop: true
+    frames:
+      - |
+            WK    KW
+            WK    KW
+            KKK  KKK
+           KPEEPPEEPK
+           KPPpOOpPPK
+           KMPPMMPPMK
+            KPPMMPPK
+          KpPPPPPPPPpK
+         KppPPPPPPPPppK
+         KpPPPPMMPPPPpK
+          KpPPPMMPPPpK
+           KMPPPPPPMK
+            KDDDDDDK
+           KKppKKppKK
+           KMppKKppMK
+           KMppKKppMK
+           KppKKKKppK
+           KPp    pPK
+           KK      KK
+      - |
+            WK    KW
+            WK    KW
+            KKK  KKK
+           KPEEPPEEPK
+           KPPpOOpPPK
+           KMPPMMPPMK
+            KPPMMPPK
+          KpPPPPPPPPpK
+         KppPPPPPPPPppK
+         KpPPPPMMPPPPpK
+          KpPPPMMPPPpK
+           KMPPPPPPMK
+            KDDDDDDK
+           KKppKKppKK
+           KMppKKppMK
+           KMppKKppMK
+           KMpKKKKpMK
+           Kpp    pMK
+           KK      KK
+  walk:
+    legend: body
+    frameDuration: 240
+    loop: true
+    frames:
+      - |
+            WK    KW
+            WK    KW
+            KKK  KKK
+           KPEEPPEEPK
+           KPPpOOpPPK
+           KMPPMMPPMK
+            KPPMMPPK
+          KpPPPPPPPPpK
+         KppPPPPPPPPppK
+         KpPPPPMMPPPPpK
+          KpPPPMMPPPpK
+           KMPPPPPPMK
+            KDDDDDDK
+           KKppKKKKKK
+           KMppKKKpK
+           KMpKKKKppK
+          KppKK KKppK
+          KMK   KKpMK
+          KK     KKK
+      - |
+            WK    KW
+            WK    KW
+            KKK  KKK
+           KPEEPPEEPK
+           KPPpOOpPPK
+           KMPPMMPPMK
+            KPPMMPPK
+          KpPPPPPPPPpK
+         KppPPPPPPPPppK
+         KpPPPPMMPPPPpK
+          KpPPPMMPPPpK
+           KMPPPPPPMK
+            KDDDDDDK
+           KKKKKKppKK
+            KpKKppMK
+           KppKKKKpMK
+          KppKK KKppK
+          KMpK   KKMK
+          KKK     KK
+  attack:
+    legend: charge
+    frameDuration: 350
+    loop: false
+    frames:
+      - |
+            WK    KW
+            WK    KW
+            KKK  KKK
+           KPEEPPEEPK
+           KPPpOOpPPK
+           KMPPMMPPMK
+            KPPMMPPK
+          KpPPPPPPPPpK
+         KppPPPPPPPPppK
+         KpPPPPMMPPPPpK
+          KpPPMMMMPPpK
+           KGgGGGGgGK
+            KYGGGGYK
+           KKDDDDDDKK
+           KMppKKppMK
+           KMppKKppMK
+           KppKKKKppK
+           KPp    pPK
+           KK      KK
+      - |
+            WK    KW
+            WK    KW
+            KKK  KKK
+           KPEEPPEEPK
+           KPPpOOpPPK
+           KMPPMMPPMK
+            KPPMMPPK
+          KpPPPPPPPPpK
+         KppPPPPPPPPppK
+        KpPPPPGGGGPPPPpK
+       KpPPGGYYYYYYGGPPpK
+        KpPPGGYYYYGGPPpK
+         KMPPGGGGGGPPMK
+           KKDDDDDDKK
+           KMppKKppMK
+           KMppKKppMK
+           KppKKKKppK
+           KPp    pPK
+           KK      KK
+  die:
+    legend: die
+    frameDuration: 260
+    loop: false
+    frames:
+      - |
+           KPEEPPEEPK
+           KPPpOOpPPK
+           KMPPMMPPMK
+            KPPMMPPK
+            DDDDDDDD
+          DDpPMMMMPpDD
+         DDppPMMMMPppDD
+          DDpPPPPPPPpDD
+           DKMMMMMMKD
+            DKKKKKD
+             DDDDD
+      - |
+            DDDDDDDDD
+           DDOOEEOODDD
+           DDOOOOOODDD
+           DDOOOOOOODD
+            DDDDDDDDD
+             KKKKKK
+              KKKK

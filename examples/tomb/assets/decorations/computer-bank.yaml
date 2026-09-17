@@ -1,0 +1,68 @@
+type: decoration
+name: computer-bank
+scale: 0.85
+bobAmplitude: 0
+bobFrequency: 0
+wallMounted: true
+mountHeight: 0.7
+solid: true
+radius: 0.42
+light:
+  color: [60, 180, 220]
+  radius: 3.5
+  intensity: 0.8
+
+legends:
+  panel:
+    K: [25, 30, 38]
+    D: [45, 60, 75]
+    M: [80, 120, 140]
+    S: [180, 200, 220]
+    C: [110, 220, 235]
+    G: [110, 240, 130]
+    Y: [240, 220, 90]
+    R: [240, 90, 80]
+    W: [240, 250, 255]
+
+clips:
+  idle:
+    legend: panel
+    frameDuration: 320
+    loop: true
+    frames:
+      - |
+        SSSSSSSSSSSSS
+        SDKKKKKKKKKDS
+        SDKWMMMMMWKDS
+        SDKMCCCCCMKDS
+        SDKMCCCCCMKDS
+        SDKMCCCCCMKDS
+        SDKWMMMMMWKDS
+        SDKKKKKKKKKDS
+        SDGYDDDDDYRDS
+        SDKKKKKKKKKDS
+        SSSSSSSSSSSSS
+      - |
+        SSSSSSSSSSSSS
+        SDKKKKKKKKKDS
+        SDKWMMMMMWKDS
+        SDKMCCWCCMKDS
+        SDKMCWWWCMKDS
+        SDKMCCWCCMKDS
+        SDKWMMMMMWKDS
+        SDKKKKKKKKKDS
+        SDKYGDDDRYDDS
+        SDKKKKKKKKKDS
+        SSSSSSSSSSSSS
+      - |
+        SSSSSSSSSSSSS
+        SDKKKKKKKKKDS
+        SDKWMMMMMWKDS
+        SDKMCCCCCMKDS
+        SDKMWWWWWMKDS
+        SDKMCCCCCMKDS
+        SDKWMMMMMWKDS
+        SDKKKKKKKKKDS
+        SDDGKYRDKDGDS
+        SDKKKKKKKKKDS
+        SSSSSSSSSSSSS

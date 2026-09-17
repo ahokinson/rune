@@ -1,0 +1,51 @@
+# Super-Mario-1-1-flavoured course for the overworld example.
+#
+# Authored data consumed by the engine tile-map loader (loadTileMap). Each tile is
+# TILE (3) terminal cells on a side; the simulation works in cells, so a tile at
+# column c row r covers (c*3, r*3, 3, 3). "." is empty space.
+#
+# legend  — terrain symbols -> cell kind (drawn + collided as that kind).
+# markers — non-terrain spawns, AND block payloads: a symbol may appear in both
+#           tables, becoming terrain that also carries a payload (a "?" is a
+#           question cell that yields a coin; "u" a question cell that hides a
+#           powerup; "1" an invisible block holding a 1-up).
+type: tilemap
+name: world-1-1
+tileSize: 3
+
+legend:
+  X: ground
+  B: brick
+  "?": question
+  u: question
+  t: brick
+  "*": brick
+  P: pipe
+  "1": hidden
+
+markers:
+  S: player
+  g: goomba
+  k: koopa
+  C: freeCoin
+  F: goal
+  "?": coin
+  u: powerup
+  t: multiCoin
+  "*": star
+  "1": oneUp
+
+layout: |
+  ....................................................................................................................................................................................................................
+  ....................................................................................................................................................................................................................
+  ...................................................................................g..g.............................................................................................................................
+  ................................................................................BBBBBBBB....................................................................................................X.......................
+  ...........................................................................................................................................................................................XX.......................
+  ..........................................................................................................................................................................................XXX.......................
+  ................?...BuB?B......................................1..............u...t......B*B........BuB....................................................................BBB?..........XXXX.......................
+  ..............................................PP.....PP.........................................................CCC......................X..X..........X..X.............................XXXXX.......................
+  ......................................PP......PP.....PP.................................................................................XX..XX........XX..XX...........................XXXXXX.......................
+  ............................PP........PP......PP.....PP................................................................................XXX..XXX......XXX..XXX......PP.............PP..XXXXXXX.......................
+  ...S..................g.....PP........PPg.....PP..gg.PP..........................................k......g.............................XXXX..XXXX....XXXX..XXXX.....PP...gg........PP.XXXXXXXX.........F.............
+  XXXXXXXXXXXXXXXXXXXXXXXXXXXXXXXXXXXXXXXXXXXXXXXXXXXXXXXXXXXXXXXXXXXXX..XXXXXXXXXXXXXXXXXXXXXXXXXXXXXXXXXXXXXXXXXXXXXXXXXXXXXXXXXXXXXXXXXXXXXXXXXXXXXXXXX..XXXXXXXXXXXXXXXXXXXXXXXXXXXXXXXXXXXXXXXXXXXXXXXXXXXXXXXXXX
+  XXXXXXXXXXXXXXXXXXXXXXXXXXXXXXXXXXXXXXXXXXXXXXXXXXXXXXXXXXXXXXXXXXXXX..XXXXXXXXXXXXXXXXXXXXXXXXXXXXXXXXXXXXXXXXXXXXXXXXXXXXXXXXXXXXXXXXXXXXXXXXXXXXXXXXX..XXXXXXXXXXXXXXXXXXXXXXXXXXXXXXXXXXXXXXXXXXXXXXXXXXXXXXXXXX

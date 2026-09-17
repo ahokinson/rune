@@ -1,0 +1,35 @@
+type: level
+name: Lights Test
+theme: hellgate
+legend:
+  "#":
+    solid: true
+    textureId: 1
+  ".":
+    solid: false
+    textureId: 0
+markers:
+  P: player
+  E: exit
+lights:
+  - at: [10, 4]
+    color: [255, 170, 80]
+    radius: 5
+    intensity: 1.0
+  - at: [22, 4]
+    color: [120, 220, 230]
+    radius: 4
+    intensity: 1.0
+  - at: [4, 4]
+    color: [255, 110, 50]
+    radius: 3
+    intensity: 1.0
+layout: |
+  ##############################
+  #P...........................#
+  #............................#
+  #............................#
+  #............................#
+  #............................#
+  #...........................E#
+  ##############################

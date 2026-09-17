@@ -1,0 +1,36 @@
+type: decoration
+name: debris
+scale: 0.4
+bobAmplitude: 0
+bobFrequency: 0
+
+legends:
+  rubble:
+    S: [180, 165, 140]
+    s: [140, 125, 105]
+    M: [100, 85, 70]
+    D: [65, 50, 40]
+    K: [35, 25, 20]
+    d: [50, 40, 30]
+
+clips:
+  idle:
+    legend: rubble
+    frameDuration: 1000
+    loop: false
+    frames:
+      - |
+        ..............
+        ..............
+        ..............
+        ..............
+        ..............
+        ......sS......
+        .....SsMs.....
+        .....sMSs.....
+        ...SsMDDsM....
+        ..SsMDDsMSs...
+        .SsDKKsDDsMs..
+        .sMKKDDDDKKsS.
+        sDDKKKKKDDKDKs
+        dKKKKKKKKKKKKd

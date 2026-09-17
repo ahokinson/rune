@@ -1,0 +1,13 @@
+type: theme
+name: hellgate
+stone: [185, 120, 90]
+stoneMortar: [65, 30, 20]
+metal: [160, 100, 80]
+metalSeam: [70, 35, 25]
+metalRivet: [210, 130, 90]
+floor: [90, 55, 42]
+floorMortar: [40, 18, 12]
+ceiling: [55, 30, 28]
+glow: [255, 110, 50]
+hazard: [220, 70, 50]
+fogDistance: 16

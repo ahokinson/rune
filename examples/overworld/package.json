@@ -1,0 +1,21 @@
+{
+  "name": "overworld",
+  "version": "0.0.0",
+  "private": true,
+  "type": "module",
+  "description": "Side-scrolling platformer (2D sprites + tilemap)",
+  "scripts": {
+    "dev": "rune dev",
+    "build": "rune build"
+  },
+  "dependencies": {
+    "@ahokinson/rune": "workspace:*",
+    "@opentui/solid": "*",
+    "@opentui/core": "*",
+    "solid-js": "^1"
+  },
+  "devDependencies": {
+    "@types/bun": "latest",
+    "typescript": "^5"
+  }
+}

@@ -1,0 +1,82 @@
+type: decoration
+name: torch
+scale: 0.45
+bobAmplitude: 0
+bobFrequency: 0
+wallMounted: true
+mountHeight: 1.0
+
+legends:
+  flame:
+    Y: [255, 235, 110]
+    O: [255, 175, 60]
+    R: [230, 90, 35]
+    D: [120, 35, 18]
+    M: [110, 70, 40]
+    K: [50, 30, 18]
+    B: [80, 55, 30]
+    s: [180, 150, 100]
+
+clips:
+  idle:
+    legend: flame
+    frameDuration: 220
+    loop: true
+    frames:
+      - |
+        ..Y..
+        .YOY.
+        YORYO
+        ROORR
+        .ROR.
+        ..R..
+        .....
+        .....
+        .....
+        .....
+        .DDD.
+        .KMK.
+        .MMM.
+        .MBM.
+        .MBM.
+        .MMM.
+        .KMK.
+        .sss.
+      - |
+        .....
+        ..Y..
+        .YOY.
+        YORYO
+        ROORR
+        .RDR.
+        ..R..
+        .....
+        .....
+        .....
+        .DDD.
+        .KMK.
+        .MMM.
+        .MBM.
+        .MBM.
+        .MMM.
+        .KMK.
+        .sss.
+      - |
+        ..Y..
+        .YOY.
+        YORYO
+        RYORR
+        .ROR.
+        ..D..
+        .....
+        .....
+        .....
+        .....
+        .DDD.
+        .KMK.
+        .MMM.
+        .MBM.
+        .MBM.
+        .MMM.
+        .KMK.
+        .sss.

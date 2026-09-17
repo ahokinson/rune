@@ -1,0 +1,31 @@
+type: pickup
+name: health
+kind: health
+amount: 25
+scale: 0.5
+collisionSize: [0.6, 0.6]
+bobAmplitude: 1.2
+bobFrequency: 0.004
+
+legends:
+  health:
+    R: [110, 230, 130]
+    G: [55, 180, 80]
+    M: [38, 145, 60]
+    D: [22, 95, 38]
+    K: [12, 55, 22]
+    H: [255, 255, 255]
+    W: [235, 240, 235]
+    S: [180, 195, 180]
+
+standalone:
+  legend: health
+  art: |
+    .RRRRRR.
+    RGGHHGGR
+    RGHWWHGR
+    RHWWWWHR
+    RHWWWWHR
+    RGHWWHGR
+    RDDDDDDR
+    .KKKKKK.

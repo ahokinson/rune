@@ -1,0 +1,40 @@
+type: decoration
+name: banner
+scale: 0.85
+bobAmplitude: 0.5
+bobFrequency: 0.0015
+
+legends:
+  cloth:
+    R: [165, 35, 35]
+    r: [120, 20, 22]
+    D: [70, 12, 14]
+    K: [35, 8, 8]
+    Y: [220, 180, 90]
+    y: [165, 130, 60]
+    M: [85, 85, 85]
+
+clips:
+  idle:
+    legend: cloth
+    frameDuration: 1000
+    loop: false
+    frames:
+      - |
+        MMMMMMM
+        MyyyyyM
+        RrRrRrR
+        RrrYrrR
+        RrYYYrR
+        RrYyYrR
+        RrYYYrR
+        RrrYrrR
+        RrRrRrR
+        RrrrrrR
+        RrYrYrR
+        RrYrYrR
+        DrrrrrD
+        DDrrrDD
+        .DDrDD.
+        ..DrD..
+        ...K...

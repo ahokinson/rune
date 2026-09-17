@@ -1,0 +1,48 @@
+{
+  "name": "rune-workspace",
+  "version": "0.1.0",
+  "description": "Workspace for the rune TUI game engine and its example games",
+  "license": "MIT",
+  "repository": {
+    "type": "git",
+    "url": "git+https://github.com/ahokinson/rune.git"
+  },
+  "homepage": "https://github.com/ahokinson/rune#readme",
+  "bugs": {
+    "url": "https://github.com/ahokinson/rune/issues"
+  },
+  "private": true,
+  "type": "module",
+  "workspaces": [
+    "packages/*",
+    "examples/*"
+  ],
+  "scripts": {
+    "build": "bun --cwd packages/rune run build",
+    "typecheck": "tsc --noEmit",
+    "test": "bun test",
+    "format": "biome format --write packages examples",
+    "lint": "biome lint packages examples",
+    "check": "biome check packages examples",
+    "cli": "bun ./packages/rune/cli/index.ts",
+    "docs": "typedoc",
+    "docs:watch": "typedoc --watch",
+    "example:tomb": "bun --cwd examples/tomb run dev",
+    "example:attack-surface": "bun --cwd examples/attack-surface run dev",
+    "example:overworld": "bun --cwd examples/overworld run dev",
+    "example:tamagotui": "bun --cwd examples/tamagotui run dev",
+    "example:teapot": "bun --cwd examples/teapot run dev",
+    "example:git-3d": "bun --cwd examples/git-3d run dev"
+  },
+  "devDependencies": {
+    "@ahokinson/rune": "workspace:*",
+    "@biomejs/biome": "^2.4.16",
+    "@opentui/core": "*",
+    "@opentui/solid": "*",
+    "@types/bun": "latest",
+    "solid-js": "^1",
+    "typedoc": "^0.28",
+    "typedoc-plugin-markdown": "^4",
+    "typescript": "^5"
+  }
+}

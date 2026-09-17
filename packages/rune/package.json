@@ -1,0 +1,51 @@
+{
+  "name": "@ahokinson/rune",
+  "version": "0.1.0",
+  "description": "TUI game engine on OpenTUI + SolidJS",
+  "license": "MIT",
+  "author": "ahokinson",
+  "homepage": "https://github.com/ahokinson/rune#readme",
+  "bugs": {
+    "url": "https://github.com/ahokinson/rune/issues"
+  },
+  "repository": {
+    "type": "git",
+    "url": "git+https://github.com/ahokinson/rune.git",
+    "directory": "packages/rune"
+  },
+  "type": "module",
+  "sideEffects": false,
+  "publishConfig": {
+    "registry": "https://npm.pkg.github.com"
+  },
+  "exports": {
+    ".": {
+      "import": "./dist/index.js",
+      "types": "./dist/index.d.ts"
+    }
+  },
+  "main": "./dist/index.js",
+  "module": "./dist/index.js",
+  "types": "./dist/index.d.ts",
+  "bin": {
+    "rune": "./dist/cli.js"
+  },
+  "files": [
+    "dist",
+    "templates",
+    "README.md",
+    "LICENSE"
+  ],
+  "scripts": {
+    "build": "tsup",
+    "test": "bun test"
+  },
+  "peerDependencies": {
+    "solid-js": "^1",
+    "@opentui/solid": "*",
+    "@opentui/core": "*"
+  },
+  "devDependencies": {
+    "tsup": "^8"
+  }
+}

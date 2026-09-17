@@ -1,0 +1,156 @@
+type: level
+name: Laboratories
+theme: laboratories
+extraThemes: [cryolab, foundry]
+# Central junction branches three ways: west storage (crate maze, melee imps),
+# east cryolab server hall behind a door (computer-bank cover, hellknight, exit on
+# a raised platform), south foundry hazard corridor behind a door (toxic tiles).
+legend:
+  "#":
+    solid: true
+    textureId: 1
+  "@":
+    solid: true
+    textureId: 2
+  ".":
+    solid: false
+    textureId: 0
+  "g":
+    solid: false
+    textureId: 0
+    floorDecal: 4
+  "x":
+    solid: false
+    textureId: 0
+    floorDecal: 6
+  "v":
+    solid: false
+    textureId: 0
+    ceilingDecal: 2
+  "D":
+    solid: true
+    textureId: 2
+    door:
+      openTextureId: 0
+  "L":
+    solid: false
+    textureId: 0
+    themeId: 1
+  "l":
+    solid: false
+    textureId: 0
+    floorDecal: 4
+    themeId: 1
+  "J":
+    solid: true
+    textureId: 2
+    themeId: 1
+  "r":
+    solid: false
+    textureId: 0
+    floorHeight: 0.15
+    ceilingHeight: 2.00
+    themeId: 1
+  "p":
+    solid: false
+    textureId: 0
+    floorHeight: 0.35
+    ceilingHeight: 2.20
+    themeId: 1
+  "F":
+    solid: false
+    textureId: 0
+    themeId: 2
+  "W":
+    solid: true
+    textureId: 8
+    themeId: 2
+  "z":
+    solid: false
+    textureId: 0
+    hazard: 8
+    floorDecal: 2
+    themeId: 2
+  "E":
+    solid: false
+    textureId: 9
+    floorHeight: 0.35
+    ceilingHeight: 2.20
+    themeId: 1
+markers:
+  P: player
+  I: imp
+  K: hellknight
+  H:
+    pickup: health
+    amount: 25
+  A:
+    pickup: ammo
+    amount: 10
+  E: exit
+  X:
+    decoration: crate
+  B:
+    decoration: computer-bank
+  S:
+    decoration: wall-sconce
+  R:
+    decoration: pipes
+  T:
+    decoration: terminal
+  O:
+    decoration: barrel
+lights:
+  - at: [14, 11]
+    color: [120, 220, 230]
+    radius: 6
+    intensity: 0.9
+  - at: [14, 6]
+    color: [120, 210, 225]
+    radius: 6
+    intensity: 0.9
+  - at: [5, 11]
+    color: [150, 200, 210]
+    radius: 7
+    intensity: 0.8
+  - at: [26, 11]
+    color: [120, 235, 245]
+    radius: 6
+    intensity: 1.2
+  - at: [19, 11]
+    color: [240, 110, 90]
+    radius: 3
+    intensity: 1.0
+  - at: [14, 14]
+    color: [240, 110, 90]
+    radius: 3
+    intensity: 1.0
+  - at: [14, 18]
+    color: [255, 120, 40]
+    radius: 5
+    intensity: 0.7
+layout: |
+  ##############################
+  ##############################
+  ##############################
+  ##############################
+  #############TA.T#############
+  #############.I..##JJJJJJJJJJ#
+  ##R.......###R...##JLBLBLBLLJ#
+  ##...x..A.###..v.##JLLILLLLLJ#
+  ##.X.X.X..###.vI.##JLLLlLLLLJ#
+  ##..I.....##......#JLLpppppLJ#
+  ##................#JLLppKppLJ#
+  ##.X...X......P....DLrppppELJ#
+  ##........##......#JLLpppIpLJ#
+  ##....Ix..##......#JLLpppppLJ#
+  ##.X.X.X..#WWWDWWWWJLLLLLLLLJ#
+  ##........#WFFFFFFWJLLLLlLLLJ#
+  ##..IX..O.#WSzzzFFWJLLLLLLLLJ#
+  ##........#WFFFFIFWJLBLBLBLLJ#
+  ###########WFFzzzFWJJJJJJJJJJ#
+  ###########WFFFFFSW###########
+  ###########WzzzFFFW###########
+  ###########WFSHFFFW###########
+  ###########WWWWWWWW###########
+  ##############################

@@ -1,0 +1,207 @@
+type: enemy
+name: imp
+
+sightRange: 12
+attackRange: 1.5
+moveSpeed: 1.2
+repathIntervalMs: 500
+collisionSize: [0.5, 0.5]
+states: [idle, walk, attack, die]
+attackType: melee
+attackDamage: 5
+attackWindupMs: 350
+attackCooldownMs: 700
+
+legends:
+  body:
+    H: [190, 145, 90]
+    B: [150, 100, 60]
+    M: [110, 70, 40]
+    D: [75, 45, 25]
+    K: [45, 25, 12]
+    S: [235, 220, 195]
+    s: [170, 150, 115]
+    E: [255, 50, 40]
+    F: [255, 100, 70]
+    O: [80, 12, 8]
+    T: [245, 235, 220]
+    W: [220, 200, 175]
+  attack:
+    extends: body
+    R: [255, 95, 25]
+    N: [255, 165, 50]
+    I: [255, 230, 130]
+  die:
+    P: [135, 30, 30]
+    p: [85, 18, 18]
+    G: [40, 10, 10]
+    I: [60, 15, 15]
+    K: [45, 25, 12]
+    S: [235, 220, 195]
+    s: [170, 150, 115]
+
+clips:
+  idle:
+    legend: body
+    frameDuration: 400
+    loop: true
+    frames:
+      - |
+            BHHB
+           BHHHHB
+           BBMMBB
+           BEEMEEB
+           BMOOMB
+          BBMTTMBB
+         SsBBBBBBsS
+        SSsBHMMHBsSS
+         sBBHMMHBBs
+          BHMBBMHB
+          BBBBBBBB
+          BMBBBBMB
+          BMBMMBMB
+          BBBMMBBB
+          BBDMMDBB
+           BBKKBB
+          BBB  BBB
+          BBB  BBB
+          BDD  DDB
+           KW  WK
+      - |
+            BHHB
+           BHHHHB
+           BBMMBB
+           BFFMFFB
+           BMOOMB
+          BBMTTMBB
+         SsBBBBBBsS
+        SSsBHMMHBsSS
+         sBBHMMHBBs
+          BHMBBMHB
+          BBBBBBBB
+          BMBBBBMB
+          BMBMMBMB
+          BBBMMBBB
+          BBDMMDBB
+           BBKKBB
+          BBB  BBB
+          BBB  BBB
+          BDD  DDB
+           KW  WK
+  walk:
+    legend: body
+    frameDuration: 200
+    loop: true
+    frames:
+      - |
+            BHHB
+           BHHHHB
+           BBMMBB
+           BEEMEEB
+           BMOOMB
+          BBMTTMBB
+         SsBBBBBBsS
+        SSsBHMMHBsSS
+         sBBHMMHBBs
+          BHMBBMHB
+          BBBBBBBB
+          BMBBBBMB
+          BMBMMBMB
+          BBBMMBBB
+          BBDMMDBB
+           BBKKBB
+          BBB   BB
+          BBB   BB
+         BDDD    B
+         KKW     K
+      - |
+            BHHB
+           BHHHHB
+           BBMMBB
+           BEEMEEB
+           BMOOMB
+          BBMTTMBB
+         SsBBBBBBsS
+        SSsBHMMHBsSS
+         sBBHMMHBBs
+          BHMBBMHB
+          BBBBBBBB
+          BMBBBBMB
+          BMBMMBMB
+          BBBMMBBB
+          BBDMMDBB
+           BBKKBB
+          BB   BBB
+          BB   BBB
+          B    DDDB
+          K     WKK
+  attack:
+    legend: attack
+    frameDuration: 150
+    loop: false
+    frames:
+      - |
+            BHHB
+           BHHHHB
+           BBMMBB
+           BFFMFFB
+           BOOOOB
+          BBTTTTBB
+         SsBBBBBBsS
+        SSsBNNNNBsSS
+         sBNRNNRNBs
+          BNRIIRNB
+          BNRIIRNB
+          BBRNNRBB
+          BMBNNBMB
+          BBBMMBBB
+          BBDMMDBB
+           BBKKBB
+          BBB  BBB
+          BBB  BBB
+          BDD  DDB
+           KW  WK
+      - |
+            BHHB
+           BHHHHB
+           BBMMBB
+           BFFMFFB
+           BOOOOB
+          BBTTTTBB
+         SsBBBBBBsS
+        SSsBHMMHBsSS
+         sBNNNNNNBs
+          BIIIIIIB
+         NIIIIIIIIN
+        NIIIIIIIIIIN
+         NIIIIIIIIN
+          BBNIINBB
+          BBDMMDBB
+           BBKKBB
+          BBB  BBB
+          BBB  BBB
+          BDD  DDB
+           KW  WK
+  die:
+    legend: die
+    frameDuration: 250
+    loop: false
+    frames:
+      - |
+            SKKKKKKS
+           SBBBBBBBBBS
+          PPBBBBBBBBPP
+         PPPBKKBBBKKBPPP
+         PPPBBEEBBEEBPPP
+          PPPBBBBBBBPPP
+           pPPPPPPPPp
+            pppPPppp
+      - |
+           pppppppppp
+          pPPPPPPPPPPp
+         pPPGGGGGGGGPPp
+        pPPGGIIIIIIGGPPp
+        pPPGGIIIIIIGGPPp
+         pPPGGGGGGGGPPp
+          pPPPPPPPPPPp
+           pppPPPPppp

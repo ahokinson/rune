@@ -1,0 +1,36 @@
+type: decoration
+name: barrel
+scale: 0.5
+bobAmplitude: 0
+bobFrequency: 0
+
+legends:
+  metal:
+    M: [140, 130, 110]
+    m: [100, 90, 75]
+    D: [70, 60, 50]
+    K: [40, 32, 25]
+    H: [180, 170, 145]
+    R: [90, 35, 22]
+
+clips:
+  idle:
+    legend: metal
+    frameDuration: 1000
+    loop: false
+    frames:
+      - |
+        .DHHHHD.
+        DMMMMMMD
+        DMmMMmMD
+        DKKKKKKD
+        DMMMMMMD
+        DMmRmmMD
+        DMMRMMMD
+        DMmRmmMD
+        DKKKKKKD
+        DMMMMMMD
+        DMmMMmMD
+        DKKKKKKD
+        .DDDDDD.
+        ..KKKK..

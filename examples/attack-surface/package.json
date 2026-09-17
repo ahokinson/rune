@@ -1,0 +1,21 @@
+{
+  "name": "attack-surface",
+  "version": "0.0.0",
+  "private": true,
+  "type": "module",
+  "description": "Rotating threat-globe demo (spherical projection)",
+  "scripts": {
+    "dev": "rune dev",
+    "build": "rune build"
+  },
+  "dependencies": {
+    "@ahokinson/rune": "workspace:*",
+    "@opentui/solid": "*",
+    "@opentui/core": "*",
+    "solid-js": "^1"
+  },
+  "devDependencies": {
+    "@types/bun": "latest",
+    "typescript": "^5"
+  }
+}

@@ -1,0 +1,35 @@
+type: decoration
+name: crate
+scale: 0.55
+bobAmplitude: 0
+bobFrequency: 0
+wallMounted: false
+mountHeight: 0
+solid: true
+radius: 0.35
+
+legends:
+  body:
+    W: [165, 115, 65]
+    w: [120, 80, 45]
+    D: [70, 45, 25]
+    K: [38, 25, 15]
+    M: [200, 150, 90]
+    G: [180, 165, 140]
+
+clips:
+  idle:
+    legend: body
+    frameDuration: 800
+    loop: true
+    frames:
+      - |
+        KKKKKKKKK
+        KMWWWWWMK
+        KWwDDDwWK
+        KWDwwwDWK
+        KWDwGwDWK
+        KWDwwwDWK
+        KWwDDDwWK
+        KMWWWWWMK
+        KKKKKKKKK

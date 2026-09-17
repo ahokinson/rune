@@ -1,0 +1,59 @@
+type: level
+name: Decals Test
+theme: hellgate
+legend:
+  "#":
+    solid: true
+    textureId: 1
+  ".":
+    solid: false
+    textureId: 0
+  "a":
+    solid: false
+    textureId: 0
+    floorDecal: 1
+  "b":
+    solid: false
+    textureId: 0
+    floorDecal: 2
+  "c":
+    solid: false
+    textureId: 0
+    floorDecal: 3
+  "d":
+    solid: false
+    textureId: 0
+    floorDecal: 4
+  "e":
+    solid: false
+    textureId: 0
+    floorDecal: 5
+  "f":
+    solid: false
+    textureId: 0
+    floorDecal: 6
+  "L":
+    solid: false
+    textureId: 0
+    ceilingDecal: 1
+  "G":
+    solid: false
+    textureId: 0
+    ceilingDecal: 2
+  "p":
+    solid: false
+    textureId: 0
+    ceilingDecal: 3
+markers:
+  S: player
+  E: exit
+layout: |
+  ##############
+  #S..........E#
+  #.a.b.c.d.e.f#
+  #............#
+  #.a.b.c.d.e.f#
+  #............#
+  #.L.G.p.L.G.p#
+  #............#
+  ##############

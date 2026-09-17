@@ -1,0 +1,33 @@
+type: pickup
+name: ammo
+kind: ammo
+amount: 10
+scale: 0.5
+collisionSize: [0.6, 0.6]
+bobAmplitude: 1.2
+bobFrequency: 0.004
+
+legends:
+  ammo:
+    H: [230, 70, 60]
+    C: [180, 40, 30]
+    c: [120, 20, 15]
+    L: [255, 220, 110]
+    Y: [210, 170, 50]
+    M: [165, 130, 35]
+    D: [105, 80, 20]
+    K: [40, 25, 5]
+
+standalone:
+  legend: ammo
+  art: |
+    ..HH..
+    .HCCH.
+    .HCCH.
+    KCCCCK
+    .YLLY.
+    .YYYY.
+    .YYYY.
+    .YMMY.
+    .DDDD.
+    ..KK..

@@ -1,0 +1,103 @@
+type: level
+name: Gateway
+theme: gateway
+# Teaching level: cramped vestibule -> open atrium (imp ambush, crate cover) ->
+# non-uniform ramp (0.15/0.35/0.60) -> elevated walkway -> glowing exit beacon.
+legend:
+  "#":
+    solid: true
+    textureId: 1
+  ".":
+    solid: false
+    textureId: 0
+  "o":
+    solid: false
+    textureId: 0
+    ceilingHeight: 1.3
+  "d":
+    solid: false
+    textureId: 0
+    floorDecal: 5
+  "k":
+    solid: false
+    textureId: 0
+    floorDecal: 6
+  "v":
+    solid: false
+    textureId: 0
+    ceilingDecal: 1
+  "1":
+    solid: false
+    textureId: 0
+    floorHeight: 0.15
+    ceilingHeight: 2.00
+  "2":
+    solid: false
+    textureId: 0
+    floorHeight: 0.35
+    ceilingHeight: 2.20
+  "3":
+    solid: false
+    textureId: 0
+    floorHeight: 0.60
+    ceilingHeight: 2.45
+  "u":
+    solid: false
+    textureId: 0
+    floorHeight: 0.60
+    ceilingHeight: 2.45
+  "E":
+    solid: false
+    textureId: 9
+    floorHeight: 0.60
+    ceilingHeight: 2.45
+markers:
+  P: player
+  I: imp
+  H:
+    pickup: health
+    amount: 25
+  A:
+    pickup: ammo
+    amount: 10
+  E: exit
+  X:
+    decoration: crate
+  S:
+    decoration: wall-sconce
+  T:
+    decoration: torch
+  N:
+    decoration: banner
+  B:
+    decoration: debris
+lights:
+  - at: [18, 1]
+    color: [255, 185, 95]
+    radius: 7
+    intensity: 1.4
+  - at: [9, 1]
+    color: [255, 175, 80]
+    radius: 5
+    intensity: 1.0
+  - at: [10, 7]
+    color: [120, 110, 95]
+    radius: 8
+    intensity: 0.7
+layout: |
+  ######################
+  #Po.o#Sv.TN..v..#uEuu#
+  #.dd....X....I..#uuuu#
+  #.B......I..X...#uuuu#
+  #doo.#.v..X..v..#uuuu#
+  ######....I.....#uuuu#
+  #S.k....v....v..#uuuu#
+  #......X..I..X..#uuuu#
+  #.H.............#uuuu#
+  #.A.....v....v..#3333#
+  #...............#2222#
+  #.........I.....#1111#
+  #....................#
+  #.......X....X.......#
+  #...............#....#
+  ######################
