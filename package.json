@@ -18,7 +18,7 @@
     "examples/*"
   ],
   "scripts": {
-    "build": "bun --cwd packages/rune run build",
+    "build": "cd packages/rune && bun run build",
     "typecheck": "tsc --noEmit",
     "test": "bun test",
     "format": "biome format --write packages examples",
@@ -27,12 +27,12 @@
     "cli": "bun ./packages/rune/cli/index.ts",
     "docs": "typedoc",
     "docs:watch": "typedoc --watch",
-    "example:tomb": "bun --cwd examples/tomb run dev",
-    "example:attack-surface": "bun --cwd examples/attack-surface run dev",
-    "example:overworld": "bun --cwd examples/overworld run dev",
-    "example:tamagotui": "bun --cwd examples/tamagotui run dev",
-    "example:teapot": "bun --cwd examples/teapot run dev",
-    "example:git-3d": "bun --cwd examples/git-3d run dev"
+    "example:tomb": "cd examples/tomb && bun run dev",
+    "example:attack-surface": "cd examples/attack-surface && bun run dev",
+    "example:overworld": "cd examples/overworld && bun run dev",
+    "example:tamagotui": "cd examples/tamagotui && bun run dev",
+    "example:teapot": "cd examples/teapot && bun run dev",
+    "example:git-3d": "cd examples/git-3d && bun run dev"
   },
   "devDependencies": {
     "@ahokinson/rune": "workspace:*",
